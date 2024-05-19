@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10XL SNEAKER</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+        header {
+            background-color: white;
+            color: black;
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+        .product {
+            display: flex;
+            background-color: #fff;
+            padding: 1em;
+            margin-bottom: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 450px;
+            height: 450px;
+            margin-right: 2em;
+        }
+        .product-details {
+            flex: 1;
+        }
+        .product-details h2 {
+            margin-top: 0;
+        }
+        .reviews, .about, .other-products {
+            background-color: #fff;
+            padding: 1em;
+            margin-bottom: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .review {
+            border-bottom: 1px solid #ddd;
+            padding: 0.5em 0;
+        }
+        .review:last-child {
+            border-bottom: none;
+        }
+
+        .other-products img {
+            width: 200px;
+            height: 200px;
+            margin: 0.5em;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .other-products a {
+            text-decoration: none;
+        }
+        .other-products a:hover img {
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        .buy-button {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 7px;
+            cursor: pointer;
+        }
+
+        header {
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.webp" alt="">
+        <h1>New Boots "Warehouse"</h1>
+    </header>
+    <div class="container">
+        <section class="product">
+            <img src="sneakers1.jpg" alt="Товар">
+            <div class="product-details">
+                <h2>MEN'S 10XL SNEAKER IN WHITE</h2>
+                <p>Ціна: 69000 гривень</p>
+                <p>Наявність: Так</p>
+                <div class="size-select">
+                    <label for="size">Виберіть розмір:</label>
+                    <select id="size" name="size">
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                    </select>
+                </div>
+                <p>
+                    <p><strong>Деталі продукту:</strong></p>
+                    <ul>
+                        <li>Без шкіри</li>
+                        <li>Кросівки</li>
+                        <li>Сітка і поліуретан</li>
+                        <li>Повністю світловідбиваючий верх</li>
+                        <li>Логотип Balenciaga на носку та ззаду</li>
+                        <li>Розмір із тисненням у верхній і задній частині каблука</li>
+                        <li>Гумова марка 3XL на язику зі світловідбиваючими деталями</li>
+                        <li>Накладка на спинку та язик зі світловідбиваючими деталями</li>
+                        <li>Застереження: додаткові шнурки зав’язуються навколо взуття з метою стилізації, і їх слід зняти перед використанням</li>
+                        <li>Виготовлено в Китаї</li>
+                    </ul>
+                    <p><strong>Догляд за виробом:</strong></p>
+                    <ul>
+                        <li>Щоб доглядати за цим виробом, протирайте його м’якою сухою тканиною натурального кольору.</li>
+                        <li>Не використовуйте для чищення нейтральні або агресивні хімікати.</li>
+                        <li>Не прати в машині. Натомість рекомендуємо звернутися до фахівця з прибирання.</li>
+                        <li>Не піддавайте цей виріб дії прямих джерел тепла або сонячного світла протягом тривалого часу.</li>
+                        <li>Після кожного використання радимо зберігати його в сумці та коробці, щоб захистити його від світла, пилу та вологи.</li>
+                    </ul>
+                </p>
+                <button class="buy-button">Купити зараз</button>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2>Відгуки</h2>
+            <div class="review">
+                <p><strong>Іван Іванов</strong> - Чудовий товар, рекомендую!</p>
+            </div>
+            <div class="review">
+                <p><strong>Марія Петрова</strong> - Не очікувала такої якості за таку ціну.</p>
+            </div>
+            <div class="review">
+                <p><strong>Ken carson</strong> - Диявол більше не носить прада, він носить баленсіага.</p>
+            </div>
+        </section>
+
+        <section class="other-products">
+            <h2>Інші товари</h2>
+            <a href="product-page1.html">
+                <img src="sneakers2.jpg" alt="Товар 1">
+            </a>
+            <a href="product-page2.html">
+                <img src="sneakers3.jpg" alt="Товар 2">
+            </a>
+
+        </section>
+
+        <section class="about">
+            <h2>Про магазин</h2>
+            <p>Ласкаво просимо до New Boots "Warehouse"! Ми спеціалізуємося на стильному та якісному одязі для всіх. Наша мета - продавати рідкісні речі з комфортом для покупця</p>
+            <p>Контактна інформація:</p>
+            <ul>
+                <li>Адреса: Вул. Моди, 45</li>
+                <li>Телефон: 8-800-123-45-67</li>
+                <li>Email: info@norwieshop.ua</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
